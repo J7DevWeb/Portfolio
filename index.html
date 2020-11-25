@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Jérémie Douet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--  Menu-->
+   <header>
+       <nav>
+           <div class="logo"><h1>JD</h1></div>
+           <div class="openMenu"> <i class=" fa fa-bars"></i></div>
+           <ul class="mainMenu">
+               <li><a href="">Accueil</a></li>
+               <li><a href="#about">Présentation</a></li>
+               <li><a href="#skill">Mes compétences</a></li>
+               <li><a href="#xp">Mes experiences</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <div class="closeMenu"><i class="fa fa-times"></i></div>
+           </ul>
+       </nav>
+   </header>
+<!--   Corps de la page-->
+   <main>
+       <section class="home">
+           <h2 class="title">Jérémie Douet</h2>
+       </section>
+       
+       <section class="about" id="about">
+           <h3>A propos de moi</h3>
+           <div class="section-container">
+				<p> Passionné de sciences et de technologie depuis mon plus jeune âge, j'ai obtenu un master en génétique, physiologie et bio-informatique en 2017. Depuis le début de l'année 2020 je me forme au développement web et web mobile afin de me reconvertir dans le milieu du numérique.
+				 <br> <br>Aujourd'hui en fin de formation, je recherche un stage d’une durée de deux mois au cours duquel je pourrai faire une démonstration concrète de mes compétences nouvellement acquises. <br>Je maitrise le développement frontend (partie visible par l’utilisateur) avec les langages HTML5, CSS3 et JavaScript et le développement backend (partie serveur assurant le fonctionnement du site) avec les langages Java et PHP. <br>Je n’ai pas d’expérience concrète en entreprise mais j’ai développé de nombreux projets personnels pendant mon temps libre (voir rubrique suivante). </p>
+			</div>
+       </section>
+       <section class="skill" id="skill">
+           <h3>Ce que je sais faire</h3>
+           <div class="container">
+               <div class="card">
+                   <div class="imgBx" data-text ="HTML">
+                       <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="">
+                   </div>
+                   <div class="content">
+                       <h3>HTML5</h3>
+                       <p>
+                       <progress value="90" max="100"></progress> </p>
+                       <a href="https://youtu.be/F6jTPDB39Kw" id="blink">Mes projets</a>
+                   </div>
+               </div>
+               
+                <div class="card">
+                   <div class="imgBx" data-text ="CSS">
+                       <img src="https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif" alt="">
+                   </div>
+                   <div class="content">
+                       <h3>CSS3</h3>
+                       <p><progress value="90" max="100"> </progress><br> +Framework bootstrap.</p>
+                       <a href="https://youtu.be/slOo9b-Ata0" id="blink">Mes projets</a>
+                   </div>
+               </div>
+               
+                <div class="card">
+                   <div class="imgBx" data-text ="JavaScript">
+                       <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="">
+                   </div>
+                   <div class="content">
+                       <h3>JavaScript</h3>
+                       <p><progress value="60" max="100"></progress> +Framework jQuery.</p>
+                       <a href="#">Projet à venir</a>
+                   </div>
+               </div>
+               
+               <div class="card">
+                   <div class="imgBx" data-text ="Java">
+                       <img src="https://media.giphy.com/media/l0HU7JI4zIb34QM5a/giphy.gif" alt="">
+                   </div>
+                   <div class="content">
+                       <h3>Java</h3>
+                       <p><progress value="70" max="100"></progress></p>
+                       <a href="https://github.com/J7DevWeb/JavaSoloProjects"id="blink">Mes projets</a>
+                   </div>
+               </div>
+               
+               <div class="card">
+                   <div class="imgBx" data-text ="PHP">
+                       <img src="https://media.giphy.com/media/MAj8Ujk7RkiIHj5iJp/giphy.gif" alt="">
+                   </div>
+                   <div class="content">
+                       <h3>PHP</h3>
+                       <p><progress value="0" max="100"></progress> +Framework symfony.</p>
+                       <a href="#">Projet à venir</a>
+                   </div>
+               </div>
+               
+               <div class="card">
+                   <div class="imgBx" data-text ="SQL">
+                       <img src="https://media.giphy.com/media/qHzzDO357GwCBpn8uT/giphy.gif" alt="">
+                   </div>
+                   <div class="content">
+                       <h3>SQL</h3>
+                       <p><progress value="70" max="100"></progress><br>connaisance de Pl/sql et t/sql</p>
+                       <a href="#">Projet à venir</a>
+                   </div>
+               </div>
+               
+           </div>
+       </section>
+       <section class="xp" id="xp">
+           <h3> Ce que j'ai fait</h3>
+           <div id="accordeon">
+               <div id="item1">
+                   <a href="#item1"><h1>Diplome : Developeur Web et Web Mobile à l'ENI</h1></a>
+                   <p>En octobre 2020 j'ai débuté une reconversion dans le milieu de l'informatique. Cette formation de niveau bac+2 se concentre sur la pratique et la résolution de problèmes concrets. Pour résumer brièvement les connaissances acquises, j'ai étudié et utilisé : <br> L'algorithmie.<br> Des langages frontEnd [HTML5, CSS3 (dont le framework BootStrap) et JavaScript (dont le framework jQuery)] <br>Des langages backEnd [Java, PHP (dont le framework Symfony)]. <br>Des bases de données et le langage de requête SQL(ainsi que le Pl-SQL et le t-SQL). <br>...Et bien plus encore !</p>
+               </div>
+           </div>
+           <div id="accordeon">
+               <div id="item2">
+                   <a href="#item2"><h1>Diplome : Master II en Génétique, Physiologie et bio-Informatique</h1></a>
+                   <p>Diplôme obtenu en 2017 à l'Université Blaise Pascale de Clermont Ferrand à l'issue de 5 année de formation. <br> <br>J’ai étudié et analysé les caractères des êtres vivants, leur génome et leur épigénome. J’ai acquis les bonnes pratiques de laboratoire et appris à conduire et réaliser des expériences après leur mise au point en vue de répondre à une problématique. <br> J’ai avant tout acquis la capacité à allier les mathématiques, la physique, l’informatique et les sciences du vivant en théorie comme en pratique afin de concevoir des expériences et analyser des résultats.</p>
+               </div>
+           </div>
+           <div id="accordeon">
+               <div id="item3">
+                   <a href="#item3"><h1>Emploi de Professeur de 2017 à 2020</h1></a>
+                   <p>Dès la fin de mes études, j'ai commencé à enseigner dans l'académie de Clermont-Ferrand. J'ai effectué des enseignements de mathématiques et SVT au collège dans des classes de 6eme, 5eme, 4eme et 3eme. J'ai également occupé pendant un an le poste de professeur principal. <br> J'ai enseigner la biologie fondamentale et l'anatomie en classe préparatoire pour le concours infirmier. <br> <br>
+                   Ces expériences professionnelles m'ont permis d'apprendre à gérer et encadrer un projet ainsi qu'à faire des présentations orales et écrites accessibles sur des sujets que je maitrise.</p>
+
+               </div>
+           </div>
+           <div id="accordeon">
+               <div id="item4">
+                   <a href="#item4"><h1>Généticien en laboratoire de recherche</h1></a>
+                  <p>Stage de master I et master II en génétique et épigénétique avec comme modèle la plante Arabidopsis thaliana. <br> Sujet Master II :“ Etude du rôle des protéines TRB dans la protection des télomères”
+                   <br> J'ai appris tout au long de ces stages à conduire au sein d'une équipe un projet de recherche et développement sous l'encadrement d'un responsable. De l'analyse et la gestion de donnée derrière un bureau à la réalisation d'expériences j'ai dû faire preuve d'autonomie et m'adapter à toute les situations.</p>
+
+               </div>
+           </div>
+       </section>
+       <section class="contact" id="contact">
+           <h3>Prendre contact</h3>
+           <div class="container">
+
+               
+                <div class="card">
+                   <div class="imgBx" data-text ="LinkedIn">
+                       <img src="img/linkedin-icon-8-512.png" alt="">
+                   </div>
+                   <div class="content">
+                       <p>Mon cursus sur <a href="www.linkedin.com/in/jérémie-d-4a6540197" id="blink">LinkedIn</a></p>
+                   </div>
+               </div>
+               
+               <div class="card">
+                   <div class="imgBx" data-text ="A venir">
+                       <img src="#" alt="">
+                   </div>
+                   <div class="content">
+                       <p>Formulaire de contact en cours de création.</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
