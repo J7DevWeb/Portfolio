@@ -1,396 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;400;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+:root{
+    --main:#1E1F26;
+    --second: #283655;
+    --third: #CB0011;
+    --degUn: #D0E1F9;
+    --degDeux: #4D648D;
+    --white: white;
+}
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--main);
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+a{
+  color: var(--second);
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--third);
+  font-size: 1.2rem;
     
 }
 
-html{
-	scroll-behavior: smooth;
+button{
+  color: var(--second);
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0.8;
+  border: none;
 }
 
-body{
-    font-family: 'Grenze Gotisch', cursive;
-    height: 100vh;
-    overflow: hidden;
-    
-}
-/*Menu*/
-nav{
-    position: relative;
-    background: #000;
-    color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    height: 15vh;
-}
-nav .mainMenu{
-    display: flex;
-    list-style: none;
+button:hover{
+  color: var(--third);
+  font-size: 1.5rem; 
+  border: none;
 }
 
-
-nav .mainMenu li a{
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: ghostwhite;
-    font-size: 1.5rem;
+h2,
+p {
+  color: var(--second);
+  font-weight: 500;
+  opacity: 0.8;
 }
 
-nav .mainMenu li a:hover{
-    color: whitesmoke;
-    text-shadow: 2px 2px 3px darkred;
+h3 {
+  color: var(--main);
+  font-weight: 600;
+  opacity: 0.8;
 }
 
-nav .openMenu{
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-}
-
-nav .mainMenu .closeMenu{
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-}
-
-nav .logo{
-    margin: 6px;
-    font-size: 25px;
-    cursor: pointer;
-    color: darkred;
-}
-
-@media(max-width: 800px){
-    nav .mainMenu{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .mainMenu .closeMenu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    nav .openMenu {
-        display: block;
-    }
-    nav .mainMenu li a:hover{
-        background: none;
-        color : darkred;
-        font-size: 1.6rem;
-    }
-    h2{
-        font-size: 7em;
-    }
-}
-
-/*corps de la page*/
-main {
-    position: fixed;
-    width: 100%;
-    height: 85vh;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    color: ghostwhite;
-    background: black;
-}
-
-main section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: start;
-}
-
-
-.home h2{
-    text-align: center;
-    font-size: 5em;
-    line-height: 80vh;
-}
-
-.home span{
-
-    transition: all 7s ease;
-    transform :  translateY(50px);
-    display: inline-block;
-}
-
-span.fade{
-    color: darkred;
-    transform :  translateY(0px);
-}
-
-::-webkit-scrollbar{
-    background: black;
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent,darkred);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(transparent,whitesmoke);
-    border-radius: 6px;
-}
-
-/*Rain*/
-.fa-tint {
-	color: ghostwhite;
-	position: absolute;
-	top: 15vh;
-  animation: fall linear forwards;
-}
-@keyframes fall {
-	to {
-		transform: translateY(105vh);
-	}
-}
-
-/*sections*/
-
-h3{
-    text-align: center;
-    font-size: 1.5em;
-}
-
-#skill{
-    height: 1200px;
-}
-
-/*About*/
-.section-container {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	padding: 20px;
-    
-}
-.section-container p {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-#about{
-    background: url(img/Wall2.jpg) fixed no-repeat;
-	background-position: center;
-}
-
-/*My skills*/
-#blink{
-    animation: blink 4s infinite;
-}
-@keyframes blink{
-    0%{opacity: 1;}
-    50%{opacity: 0.3;}
-    100%{opacity: 1;}
-}
-
-.container{
-    position: relative;
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin 20px;
-    margin-left:15%;
-}
-
-.container .card {
-    position: relative;
-    height: 250px;
-    background: black;
-    display: flex;
-    width: 45%;
-    margin: 30px 0;
-}
-
-.container .card .imgBx{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: darkred;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-    
-}
-
-.container .card:hover .imgBx{
-    width: 150px;
+.avatar{
     height: 150px;
-    left: -75px;
-    top: calc(50% - 75px);
-    transition: 0.5s ease-in-out;
-    background: black;
+}
+img{
+   height: 70px;
 }
 
-.container .card .imgBx:before{
-    content: attr(data-text);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-style: 6em;
-    color: darkred;
-    font-weight: 700;
+main {   
+  min-height: 100vh;
+  font-family: 'Cinzel', sans-serif;
+  background: linear-gradient(to right top, var(--degUn), var(--degDeux));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container .card .imgBx img{
-    max-width: 100px;
-    transition: 0.5s ease-in-out;
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.circle1,
+.circle2 {
+  background: var(--white);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
 }
 
-.container .card:hover .imgBx img{
-    max-width: 75px;
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.link {
+  display: flex;
+  margin: 1rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
 }
 
-.container .card .content {
-    position: absolute;
-    right: 0;
-    width: calc(100% - 75px);
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.items {
+  flex: 2;
 }
 
-.container .card .content h3 {
-    margin-bottom: 5px;
-    font-size: 24px;
+.pro {
+  background: linear-gradient(to right top, var(--degUn), var(--degDeux));
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  width: 75%;
+  position: relative;
 }
 
-.container .card .content a{
-   display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    color: whitesmoke;
-    text-decoration: none;
-    background: black;
+.pro i{
+    padding: 0px 10px;
 }
 
-@media (max-width: 992px){
-    #skill{
-    height: 2300px;
 }
-    .container{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin-left:0%;
-    }
+.pro h2 {
+  width: 90%;
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Infos */
+.status {
+  margin-bottom: 3rem;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.items {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
     
-    .container .card{
-        width: 400px;
-        
-    }
 }
 
-@media (max-width: 768px){ 
-       #skill{
-    height: 3000px;
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
-    .container{
-    margin-left:0%;
-    }
-    .container .card{
-        max-width: 300px;
-        flex-direction: column;
-        height: auto;
-        
-    }
-    
-    .container .card .imgBx{
-        position: relative;
-        
-    }
-    
-    .container .card .imgBx,
-    .container .card:hover .imgBx{
-        width: 100%;
-        height: 200px;
-        left: 0;
-    }
-    
-    .container .card .imgBx img,
-    .container .card:hover .imgBx img{
-        max-width: 100px;
-    }
-
-    .container .card .content{
-        position: relative;
-        width: 100%;
-    }
-}
-
-/*My works*/
-#xp{
-    background: url(img/Wall1r.jpg) fixed no-repeat;
-	background-position: center;
-}
-
-#accordeon p{
-    display: none;
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-}
-
-#accordeon div:target  p{
-    display : block;
-}
-
-#accordeon a{
-    text-align: center;
-    text-decoration: none;
-    color: #D40800;
-    text-shadow: 1px 1px 1px #F27E86;
-}
-
-#accordeon a:hover{
-    text-align: center;
-    text-decoration: underline;
-    color: ghostwhite;
-    text-shadow: 1px 1px 1px black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
