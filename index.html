@@ -2,168 +2,177 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Jérémie Douet</title>
+    <title>Jérémie Douet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="main.js"></script>
+     <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://media.giphy.com/media/WsYQ7Ex3mbovu4avGk/giphy.gif">
 </head>
-<body>
-<!--  Menu-->
-   <header>
-       <nav>
-           <div class="logo"><h1>JD</h1></div>
-           <div class="openMenu"> <i class=" fa fa-bars"></i></div>
-           <ul class="mainMenu">
-               <li><a href="">Accueil</a></li>
-               <li><a href="#about">Présentation</a></li>
-               <li><a href="#skill">Mes compétences</a></li>
-               <li><a href="#xp">Mes experiences</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <div class="closeMenu"><i class="fa fa-times"></i></div>
-           </ul>
-       </nav>
-   </header>
-<!--   Corps de la page-->
-   <main>
-       <section class="home">
-           <h2 class="title">Jérémie Douet</h2>
-       </section>
-       
-       <section class="about" id="about">
-           <h3>A propos de moi</h3>
-           <div class="section-container">
-				<p> Passionné de sciences et de technologie depuis mon plus jeune âge, j'ai obtenu un master en génétique, physiologie et bio-informatique en 2017. Depuis le début de l'année 2020 je me forme au développement web et web mobile afin de me reconvertir dans le milieu du numérique.
-				 <br> <br>Aujourd'hui en fin de formation, je recherche un stage d’une durée de deux mois au cours duquel je pourrai faire une démonstration concrète de mes compétences nouvellement acquises. <br>Je maitrise le développement frontend (partie visible par l’utilisateur) avec les langages HTML5, CSS3 et JavaScript et le développement backend (partie serveur assurant le fonctionnement du site) avec les langages Java et PHP. <br>Je n’ai pas d’expérience concrète en entreprise mais j’ai développé de nombreux projets personnels pendant mon temps libre (voir rubrique suivante). </p>
-			</div>
-       </section>
-       <section class="skill" id="skill">
-           <h3>Ce que je sais faire</h3>
-           <div class="container">
-               <div class="card">
-                   <div class="imgBx" data-text ="HTML">
-                       <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="">
-                   </div>
-                   <div class="content">
-                       <h3>HTML5</h3>
-                       <p>
-                       <progress value="90" max="100"></progress> </p>
-                       <a href="https://youtu.be/F6jTPDB39Kw" id="blink">Mes projets</a>
-                   </div>
-               </div>
-               
-                <div class="card">
-                   <div class="imgBx" data-text ="CSS">
-                       <img src="https://media.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.gif" alt="">
-                   </div>
-                   <div class="content">
-                       <h3>CSS3</h3>
-                       <p><progress value="90" max="100"> </progress><br> +Framework bootstrap.</p>
-                       <a href="https://youtu.be/slOo9b-Ata0" id="blink">Mes projets</a>
-                   </div>
-               </div>
-               
-                <div class="card">
-                   <div class="imgBx" data-text ="JavaScript">
-                       <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="">
-                   </div>
-                   <div class="content">
-                       <h3>JavaScript</h3>
-                       <p><progress value="60" max="100"></progress> +Framework jQuery.</p>
-                       <a href="#">Projet à venir</a>
-                   </div>
-               </div>
-               
-               <div class="card">
-                   <div class="imgBx" data-text ="Java">
-                       <img src="https://media.giphy.com/media/l0HU7JI4zIb34QM5a/giphy.gif" alt="">
-                   </div>
-                   <div class="content">
-                       <h3>Java</h3>
-                       <p><progress value="70" max="100"></progress></p>
-                       <a href="https://github.com/J7DevWeb/JavaSoloProjects"id="blink">Mes projets</a>
-                   </div>
-               </div>
-               
-               <div class="card">
-                   <div class="imgBx" data-text ="PHP">
-                       <img src="https://media.giphy.com/media/MAj8Ujk7RkiIHj5iJp/giphy.gif" alt="">
-                   </div>
-                   <div class="content">
-                       <h3>PHP</h3>
-                       <p><progress value="0" max="100"></progress> +Framework symfony.</p>
-                       <a href="#">Projet à venir</a>
-                   </div>
-               </div>
-               
-               <div class="card">
-                   <div class="imgBx" data-text ="SQL">
-                       <img src="https://media.giphy.com/media/qHzzDO357GwCBpn8uT/giphy.gif" alt="">
-                   </div>
-                   <div class="content">
-                       <h3>SQL</h3>
-                       <p><progress value="70" max="100"></progress><br>connaisance de Pl/sql et t/sql</p>
-                       <a href="#">Projet à venir</a>
-                   </div>
-               </div>
-               
-           </div>
-       </section>
-       <section class="xp" id="xp">
-           <h3> Ce que j'ai fait</h3>
-           <div id="accordeon">
-               <div id="item1">
-                   <a href="#item1"><h1>Diplome : Developeur Web et Web Mobile à l'ENI</h1></a>
-                   <p>En octobre 2020 j'ai débuté une reconversion dans le milieu de l'informatique. Cette formation de niveau bac+2 se concentre sur la pratique et la résolution de problèmes concrets. Pour résumer brièvement les connaissances acquises, j'ai étudié et utilisé : <br> L'algorithmie.<br> Des langages frontEnd [HTML5, CSS3 (dont le framework BootStrap) et JavaScript (dont le framework jQuery)] <br>Des langages backEnd [Java, PHP (dont le framework Symfony)]. <br>Des bases de données et le langage de requête SQL(ainsi que le Pl-SQL et le t-SQL). <br>...Et bien plus encore !</p>
-               </div>
-           </div>
-           <div id="accordeon">
-               <div id="item2">
-                   <a href="#item2"><h1>Diplome : Master II en Génétique, Physiologie et bio-Informatique</h1></a>
-                   <p>Diplôme obtenu en 2017 à l'Université Blaise Pascale de Clermont Ferrand à l'issue de 5 année de formation. <br> <br>J’ai étudié et analysé les caractères des êtres vivants, leur génome et leur épigénome. J’ai acquis les bonnes pratiques de laboratoire et appris à conduire et réaliser des expériences après leur mise au point en vue de répondre à une problématique. <br> J’ai avant tout acquis la capacité à allier les mathématiques, la physique, l’informatique et les sciences du vivant en théorie comme en pratique afin de concevoir des expériences et analyser des résultats.</p>
-               </div>
-           </div>
-           <div id="accordeon">
-               <div id="item3">
-                   <a href="#item3"><h1>Emploi de Professeur de 2017 à 2020</h1></a>
-                   <p>Dès la fin de mes études, j'ai commencé à enseigner dans l'académie de Clermont-Ferrand. J'ai effectué des enseignements de mathématiques et SVT au collège dans des classes de 6eme, 5eme, 4eme et 3eme. J'ai également occupé pendant un an le poste de professeur principal. <br> J'ai enseigner la biologie fondamentale et l'anatomie en classe préparatoire pour le concours infirmier. <br> <br>
-                   Ces expériences professionnelles m'ont permis d'apprendre à gérer et encadrer un projet ainsi qu'à faire des présentations orales et écrites accessibles sur des sujets que je maitrise.</p>
-
-               </div>
-           </div>
-           <div id="accordeon">
-               <div id="item4">
-                   <a href="#item4"><h1>Généticien en laboratoire de recherche</h1></a>
-                  <p>Stage de master I et master II en génétique et épigénétique avec comme modèle la plante Arabidopsis thaliana. <br> Sujet Master II :“ Etude du rôle des protéines TRB dans la protection des télomères”
-                   <br> J'ai appris tout au long de ces stages à conduire au sein d'une équipe un projet de recherche et développement sous l'encadrement d'un responsable. De l'analyse et la gestion de donnée derrière un bureau à la réalisation d'expériences j'ai dû faire preuve d'autonomie et m'adapter à toute les situations.</p>
-
-               </div>
-           </div>
-       </section>
-       <section class="contact" id="contact">
-           <h3>Prendre contact</h3>
-           <div class="container">
-
-               
-                <div class="card">
-                   <div class="imgBx" data-text ="LinkedIn">
-                       <img src="img/linkedin-icon-8-512.png" alt="">
-                   </div>
-                   <div class="content">
-                       <p>Mon cursus sur <a href="https://www.linkedin.com/in/jérémie-d-4a6540197" id="blink">LinkedIn</a></p>
-                   </div>
-               </div>
-               
-               <div class="card">
-                   <div class="imgBx" data-text ="A venir">
-                       <img src="#" alt="">
-                   </div>
-                   <div class="content">
-                       <p>Formulaire de contact en cours de création.</p>
-                   </div>
-               </div>
-           </div>
-       </section>
-   </main>
-    
-    <script src="main.js"></script>
-</body>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img class="avatar" src="https://media.giphy.com/media/1wMybUpIxf9Bp9U1zQ/giphy.gif" alt="" />
+            <h3>Jérémie Douet</h3>
+            <div class="themeContainer">
+            <div class="theme" id="light"></div>
+            <div class="theme" id="dark"></div>
+        </div>
+            <p><i class="fa fa-envelope"></i> jeremie.douet@gmail.com</p>
+          </div>
+          <div class="links">
+            <div class="link">
+              <img src="https://media.giphy.com/media/ZCk428yBN8IHS/giphy.gif" alt="" />
+                <button onclick="gotoCV()">CV</button>
+            </div>
+            <div class="link">
+              <img src="https://media.giphy.com/media/ZCk428yBN8IHS/giphy.gif" alt="" />
+              <button onclick="gotoFront()">Front</button>
+            </div>
+            <div class="link">
+              <img src="https://media.giphy.com/media/ZCk428yBN8IHS/giphy.gif" alt="" />
+              <button onclick="gotoBack()">Back</button>
+            </div>
+            <div class="link">
+              <img src="https://media.giphy.com/media/ZCk428yBN8IHS/giphy.gif" alt="" />
+              <button onclick="gotoBdd()">Bdd</button>
+            </div>
+          </div>
+          <div class="pro">
+             <h2>Mes réseaux</h2>	
+             <a href="https://www.linkedin.com/in/jérémie-d-4a6540197"><i class="fab fa-linkedin"></i></a>
+             <a href="https://github.com/J7DevWeb"><i class="fab fa-git"></i></a>
+          </div>
+        </div>
+        <!-- cv -->
+        <div class="items" id="cv">
+          <div class="status">
+            <h1>Curriculum Vitae</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="https://media.giphy.com/media/H83F4AfL798AmtKXIL/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>Developpeur Web et Web Mobile</h2>
+                <p>depuis 2020</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>Professeur de mathématiques</h2>
+                <p>2017 à 2020</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/iiiO25uTGI6QxAIr3i/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>Généticien en laboratoire de recherche</h2>
+                <p>2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+                <!-- front -->
+        <div class="items" id="front">
+          <div class="status">
+            <h1>Techno FrontEnd</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="https://media.giphy.com/media/RxAdKu5nrs32vhKEUq/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>CSS3, Sass</h2>
+                <p><a href="https://youtu.be/slOo9b-Ata0">Videos Demo</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>Javascript</h2>
+                <p><a href="https://github.com/J7DevWeb/frontEndTest">lien vers repo Github</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/XEDIHHp3i8bVoEdxd7/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>Angular (framework de JS)</h2>
+                <p><a href="https://j7devweb.github.io/App-Meteo/">Demo d'une appli meteo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- back -->
+        <div class="items" id="back">
+          <div class="status">
+            <h1>Techno BackEnd</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="https://media.giphy.com/media/l0HU7JI4zIb34QM5a/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>Java</h2>
+                <p><a href="https://github.com/J7DevWeb/JavaSoloProjects">Projets sur Github</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/hsDkitC0kWA60R5VEU/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>JAVAee et JAVAse</h2>
+                <p><a href="https://github.com/J7DevWeb/Site-D-Enchere-ENI">Projet de groupe</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/MAj8Ujk7RkiIHj5iJp/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>PHP (Symfony)</h2>
+                <p><a href="#">A venir</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- bdd -->
+        <div class="items" id="bdd">
+          <div class="status">
+            <h1>Bases de donnée</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="https://media.giphy.com/media/1mVsk60d2WK1Wou4q9/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>SQL</h2>
+                <p>SQL server</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/cu3dFmsVDtNT47EygV/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>PL-SQL</h2>
+                <p></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.giphy.com/media/63F1cWt2tB6p9Itksa/giphy.gif" alt="" />
+              <div class="card-info">
+                <h2>T-Sql</h2>
+                <p>Oracle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
 </html>
