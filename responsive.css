@@ -1,0 +1,35 @@
+.glass{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pro{
+    width: 50%;
+}
+
+.pro>*{
+     text-align: center;
+}
+
+.separator{
+  border-radius: 28px;
+  height: 14px;
+  width: 7%;
+  animation-name: Mouvement;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes Mouvement {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-right: 100%;
+  }
+}
+}
+
+
